@@ -1,2 +1,2 @@
 #!/bin/bash
-ggc -c $CFILE > c
+ggc -c $CFILE > CFILE.o
