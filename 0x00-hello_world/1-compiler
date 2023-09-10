@@ -1,2 +1,2 @@
 #!/bin/bash
-ggc -c $CFILE -o $CFILE="${CFILE%.*}.$.o"
+gcc -c $CFILE -o $CFILE="${CFILE%.*}.$.o"
