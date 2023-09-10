@@ -1,11 +1,12 @@
 #include <stdio.h>
-
 /*
- *C program with puts function
- *return 0
+ *main : C program puts function
+ *description : use puts function
+ *return 0 always
  */
+
 int main(void)
 {
-	puts("Programming is like building a multilingual puzzle");
+	puts("Programming is like building a multilingual puzzle\n");
 	return (0);
 }
