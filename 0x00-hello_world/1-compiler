@@ -1,2 +1,2 @@
 #!/bin/bash
-ggc -c $CFILE > CFILE.o
+ggc -c $CFILE > main.o
