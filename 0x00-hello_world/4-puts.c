@@ -1,9 +1,13 @@
 #include <stdio.h>
-/*
- *main : C program puts function
- *description : use puts function
- *return 0 always
- */
+
+/**
+ * main - Entry point
+ *
+ *description : program with puts function
+ *
+ *Return : 0 always
+ *
+*/
 
 int main(void)
 {
