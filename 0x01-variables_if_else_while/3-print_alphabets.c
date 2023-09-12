@@ -18,10 +18,11 @@ int main(void)
 		putchar (low);
 		low++;
 	}
-	while (up < 'Z')
+	while (up <= 'Z')
 	{
 		putchar (up);
 		up++;
 	}
+	putchar('\n');
 	return (0);
 }
