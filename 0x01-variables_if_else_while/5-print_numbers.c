@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main : Entry point
+ * main - Entry point
  *
- * description : print numbers
+ * description : print numbers from 0 to 9
  *
  * Return: always 0
  */
