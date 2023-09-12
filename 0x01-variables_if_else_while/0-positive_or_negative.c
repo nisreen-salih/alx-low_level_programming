@@ -1,22 +1,34 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
-* main – Entry point
-*
-* discerption : task 0
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * description: compare positive or negative
+ *
+ * Return: always 0 (Success)
+ */
 
 int main(void)
 {
 	int n;
 
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
 	if (n > 0)
-		printf("is positive");
+	{
+		printf("is positive\n");
+	}
 	else if (n == 0)
-		printf("is zero");
+	{
+		printf("is zero\n");
+	}
 	else
-		printf("is negative");
+	{
+		printf("is negative\n");
+	}
+
 	return (0);
 }
