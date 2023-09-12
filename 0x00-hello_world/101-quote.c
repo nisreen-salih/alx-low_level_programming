@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
- * description : printing sayntex
+ * Description : printing sayntex
  *
  * Return: always 0
  */
