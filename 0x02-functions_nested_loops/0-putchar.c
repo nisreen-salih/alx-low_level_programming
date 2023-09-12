@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int print()
+{
+	printf("_putchar\n");
+}
+
 /**
 * main – Entry point
 *
@@ -10,7 +15,6 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	print();
 	return (0);
 }
-
