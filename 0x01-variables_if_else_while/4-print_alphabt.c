@@ -1,34 +1,26 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ * main - Entry point
  *
- *description : alpha
+ * Description : alpha
  *
- *Return: always 0
+ * Return: always 0
  */
 
 int main(void)
 {
-	char a = 'a', f = 'f', r = 'r';
+	char a = 'a';
 
-	while (a <= 'd')
+	while (a <= 'z')
 	{
-		putchar (a);
+		if (a == 'e')
+		{
+			a++;
+		}
+		putchar(a);
 		a++;
 	}
-
-	while (f <= 'p')
-	{
-		putchar (f);
-		f++;
-	}
-
-	while (r <= 'z')
-	{
-		putchar(r);
-		r++;
-	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
