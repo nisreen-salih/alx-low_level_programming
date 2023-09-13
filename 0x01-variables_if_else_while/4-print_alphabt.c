@@ -18,6 +18,10 @@ int main(void)
 		{
 			a++;
 		}
+		if (a == 'q')
+		{
+			a++;
+		}
 		putchar(a);
 		a++;
 	}
