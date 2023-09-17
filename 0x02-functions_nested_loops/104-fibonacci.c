@@ -51,6 +51,8 @@ int main(void)
 		s = (f1 + f2) % max;
 		s0 = f10 + f20 + (f1 + f2) / max;
 		f1 = f2;
+		f10 = f20;
+		f2 = s;
 		f20 = s0;
 
 		if (c != 98)
