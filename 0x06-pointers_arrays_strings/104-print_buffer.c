@@ -33,7 +33,7 @@ void pHEXA(char *b, int s, int e)
 		}
 		else
 		{
-			printf(" ");
+			printf("  ");
 		}
 		if (i % 2)
 		{
