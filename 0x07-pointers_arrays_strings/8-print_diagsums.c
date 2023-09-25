@@ -13,9 +13,9 @@ void print_diagsums(int *a, int size)
 
 	while (l < size)
 	{
-		c1 = c1 + a[l];
-		c2 = c2 + a[size - l - 1];
-		a = a + size;
+		c1 += a[l];
+		c2 += a[size - l - 1];
+		a += size;
 		l++;
 	}
 	printf("%d, ", c1);
