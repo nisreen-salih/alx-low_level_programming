@@ -8,15 +8,20 @@
  * Return: num or -1
  */
 
+int _sqrt(int n, int x)
+{
+	if (n <= 0)
+		return -1;
+	if (x*x != n)
+		x++;
+	if (x*x == n)
+		return x;
+}
+
 int _sqrt_recursion(int n)
 {
-	int x = 0;
-	if (n <= 0)
-	{
+	if (n < 0)
 		return -1;
-	}
-	if (x * x != n)
-		x++;
-	if (x * x == n)
-		return x;
+	else
+		return (_sqrt(n, 0));
 }
