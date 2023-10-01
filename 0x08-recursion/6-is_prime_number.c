@@ -13,8 +13,6 @@ int _prime(int n, int x)
 {
 	if (n == 1 || n == -1)
 		return (0);
-	if (n % 2 == 0)
-		return (0);
 	if (x < n && n % x == 0)
 		return (0);
 	if (x < n && n % x != 1)
