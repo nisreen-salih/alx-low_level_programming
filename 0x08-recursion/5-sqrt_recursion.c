@@ -10,12 +10,12 @@
 
 int _sqrt(int n, int x)
 {
-	if (n <= 0)
+	if (n < (x * x))
 		return -1;
-	if (x*x != n)
-		x++;
-	if (x*x == n)
+	else if (x*x == n)
 		return x;
+	else
+		return (_sqrt(n, x + 1));
 }
 
 int _sqrt_recursion(int n)
