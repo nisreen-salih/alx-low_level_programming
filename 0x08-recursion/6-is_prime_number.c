@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _prime - check if prime number
+ * _prime - finds prime
  *
- * @n: num
+ * @n: number
  * @x: check
  *
- * Return: 0 or 1
+ * Return: 0 or -1
  */
 
 int _prime(int n, int x)
@@ -15,16 +15,18 @@ int _prime(int n, int x)
 		return (0);
 	if (x < n && n % x == 0)
 		return (0);
-	if (x < n && n % x != 1)
+	if (x < n && n % x != 0)
+		return (_prime(n, x + 1));
+	else
 		return (1);
 }
 
 /**
- * is_prime_number - integer is a prime number, otherwise return 0
+ * is_prime_number - check for prime
  *
- * @n: number
+ * @n: integer
  *
- * Return: 1 or 0
+ * Return: 0 or 1
  */
 
 int is_prime_number(int n)
