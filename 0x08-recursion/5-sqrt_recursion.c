@@ -19,6 +19,4 @@ int _sqrt_recursion(int n)
 		x++;
 	if (x * x == n)
 		return x;
-	if (n % 10 != 0)
-		return -1;
 }
