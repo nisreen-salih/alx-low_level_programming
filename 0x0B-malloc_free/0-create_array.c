@@ -21,4 +21,5 @@ char *create_array(unsigned int size, char c)
 	{
 		x[size] = c;
 	}
+	return (n);
 }
