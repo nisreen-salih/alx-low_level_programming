@@ -32,9 +32,9 @@ char *argstostr(int ac, char **av)
 	int x, n, i, c;
 	char *s;
 
-	if (ac == 0 || av == 0)
+	if (ac == 0 || av == NULL)
 		return (NULL);
-			;
+	
 	for (x = 0; x < ac; x++, n++)
 		n = n + strl(av[x]);
 
