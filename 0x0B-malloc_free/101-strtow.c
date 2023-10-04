@@ -58,6 +58,8 @@ char **strtow(char *str)
 			for (b = 1; str[a + b] != ' ' && str[a + b]; b++)
 			;
 			b++;
+			w[wc] = (char *)malloc(b * sizeof(char));
+			b--;
 			if (w[wc] == NULL)
 			{
 				for (c = 0; c < wc; c++)
@@ -73,7 +75,7 @@ char **strtow(char *str)
 			a += b;
 		}
 		else
-		a++;
+			a++;
 	}
 	return (w);
 }
