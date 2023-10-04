@@ -13,7 +13,7 @@ int strl(char *s)
 	int size;
 
 	for (size = 0; s[size] != '\0'; size++)
-		;
+	;
 	return (size);
 }
 
@@ -36,10 +36,9 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	for (x = 0; x < ac; x++, n++)
-		n = n + strl(av[x]);
+		n += strl(av[x]);
 
 	s = malloc(sizeof(char) * n + 1);
-
 	if (s == 0)
 		return (NULL);
 
