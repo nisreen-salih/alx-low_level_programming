@@ -16,18 +16,18 @@ int main(int argc, char **argv)
 	{
 		printf("Error\n"), exit(98);
 	}
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
+	x = atoi(argv[1]);
+	y = atoi(argv[3]);
 
 	op_func = get_op_func(argv[2]);
 	if (!op_func)
 	{
 		printf("Error\n"), exit(99);
 	}
-	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
+	if (!y && (argv[2][0] == '/' || argv[2][0] == '%'))
 	{
-		prinf("Error\n"), exit(100);
+		printf("Error\n"), exit(100);
 	}
-	printf("%d\n", po_func(x, y));
+	printf("%d\n", op_func(x, y));
 	return (0);
 }
