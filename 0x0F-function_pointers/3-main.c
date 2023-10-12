@@ -1,7 +1,7 @@
-nclude "3-calc.h"
+#include "3-calc.h"
 
 /**
- * main - check code
+ * main - code op
  * @argc : args num
  * @argv: arg vector
  *
