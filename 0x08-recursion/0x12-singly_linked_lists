@@ -1,15 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _putchar - input char
+ * _strlen_recursion - returns the length of a string
  *
- * @c: input
+ * @s: string
  *
- * Return: 1 success
+ * Return: length
  */
 
-int _putchar(char c)
+int _strlen_recursion(char *s)
 {
-        return (write(1, &c, 1));
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	else
+	{
+	return (1 + _strlen_recursion(s + 1));
+	}
 }
-
