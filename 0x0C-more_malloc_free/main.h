@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void _puts(char *str);
+int _atoi(const char *s);
+void p_int(unsigned long int i);
 int _putchar(char c);
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);

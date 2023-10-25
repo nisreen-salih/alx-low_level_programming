@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * _putchar - writes
+ * _putchar - write char
  *
  * @c: char
  *
